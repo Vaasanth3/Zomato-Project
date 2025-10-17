@@ -19,12 +19,10 @@ pipeline {
 
         stage("Checkout Code") {
             steps {
-                git branch: 'master',
-                url: 'https://github.com/Vaasanth3/Zomato-Repo.git',
-                credentialsId: 'githubcred'
+                git branch: 'main',
+                    url: 'https://github.com/Vaasanth3/Zomato-Repo.git'
             }
         }
-
 
         stage("Code Quality Analysis") {
             steps {
